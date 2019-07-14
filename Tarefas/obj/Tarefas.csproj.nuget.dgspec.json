@@ -1,0 +1,73 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/luciano/netcoreprojects/aspcore2/Tarefas/Tarefas.csproj": {}
+  },
+  "projects": {
+    "/home/luciano/netcoreprojects/aspcore2/Tarefas/Tarefas.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/luciano/netcoreprojects/aspcore2/Tarefas/Tarefas.csproj",
+        "projectName": "Tarefas",
+        "projectPath": "/home/luciano/netcoreprojects/aspcore2/Tarefas/Tarefas.csproj",
+        "packagesPath": "/home/luciano/.nuget/packages/",
+        "outputPath": "/home/luciano/netcoreprojects/aspcore2/Tarefas/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/home/luciano/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
