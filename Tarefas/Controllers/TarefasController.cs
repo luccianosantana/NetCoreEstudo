@@ -9,8 +9,16 @@ using Tarefas.Services;
 
 namespace Tarefas.Controllers
 {
+    
     public class TarefasController : Controller
     {
+        ITarefaItemService _tarefaService;
+        public TarefasController(ITarefaItemService tarefaService)
+        {
+            _tarefaService = tarefaService;
+        }
+
+
         // lista de tarefas
         public IActionResult Index()
         {            
@@ -20,7 +28,7 @@ namespace Tarefas.Controllers
             //return View(tarefas);
 
             // obter os dados e retornar            
-
+            var tarefas = _tarefaService.GetItemAsync();
             return View(tarefas);            
         }
     }

@@ -13,6 +13,7 @@ using Microsoft.EntityFrameworkCore;
 using Tarefas.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Tarefas.Services;
 
 namespace Tarefas
 {
@@ -24,7 +25,6 @@ namespace Tarefas
         }
 
         public IConfiguration Configuration { get; }
-
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
@@ -41,6 +41,11 @@ namespace Tarefas
             services.AddDefaultIdentity<IdentityUser>()
                 .AddDefaultUI(UIFramework.Bootstrap4)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+
+
+            // registrar o serviço
+            services.AddTransient<ITarefaItemService,TempTarefaItemService>(); 
+
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
