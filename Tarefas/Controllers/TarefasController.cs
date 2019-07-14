@@ -20,7 +20,7 @@ namespace Tarefas.Controllers
 
 
         // lista de tarefas
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {            
             // obter os dados e retornar            
             //TempTarefaItemService servico = new TempTarefaItemService();
@@ -28,8 +28,16 @@ namespace Tarefas.Controllers
             //return View(tarefas);
 
             // obter os dados e retornar            
-            var tarefas = _tarefaService.GetItemAsync();
-            return View(tarefas);            
+            //var tarefas = _tarefaService.GetItemAsync();
+            
+            var tarefas = await _tarefaService.GetItemAsync();
+
+            var model = new TarefaViewModel();
+            {
+                model.TarefaItens = tarefas;
+            }
+            
+            return View(model);            
         }
     }
 }
