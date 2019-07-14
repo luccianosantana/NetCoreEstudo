@@ -17,13 +17,13 @@ namespace Tarefas.Services
                 {
                     Nome = "Aprender ASP.NET core 2.0",
                     EstaCompleta = false,
-                    DataConclusao = DateTimeOffset.Now.AddDays(1)
+                    DataConclusao = DateTimeOffset.Now.AddDays(30)
                 },
                 new TarefaItem
                 {
                     Nome = "Criar aplicações Web",
                     EstaCompleta = false,
-                    DataConclusao = DateTimeOffset.Now.AddDays(20)
+                    DataConclusao = DateTimeOffset.Now.AddDays(60)
                 }  
             };
             return Task.FromResult(itens);
