@@ -1,10 +1,12 @@
 using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
+using Tarefas.Models;
 
 namespace Tarefas.Services
 {
     public interface ITarefaItemService
     {
-         Task<IEnumerable<TempTarefaItem>> GetItemAsync();
+         Task<IEnumerable<TarefaItem>> GetItemAsync();
     }
 }
