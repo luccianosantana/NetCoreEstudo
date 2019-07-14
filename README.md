@@ -1,0 +1,2 @@
+# NetCoreEstudo
+Projetos com DotnetCore
