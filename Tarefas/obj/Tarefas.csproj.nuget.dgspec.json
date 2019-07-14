@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/luciano/netcoreprojects/aspcore2/Tarefas/Tarefas.csproj": {}
+    "/home/luciano/netcoreprojects/NetCoreEstudo/Tarefas/Tarefas.csproj": {}
   },
   "projects": {
-    "/home/luciano/netcoreprojects/aspcore2/Tarefas/Tarefas.csproj": {
+    "/home/luciano/netcoreprojects/NetCoreEstudo/Tarefas/Tarefas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/luciano/netcoreprojects/aspcore2/Tarefas/Tarefas.csproj",
+        "projectUniqueName": "/home/luciano/netcoreprojects/NetCoreEstudo/Tarefas/Tarefas.csproj",
         "projectName": "Tarefas",
-        "projectPath": "/home/luciano/netcoreprojects/aspcore2/Tarefas/Tarefas.csproj",
+        "projectPath": "/home/luciano/netcoreprojects/NetCoreEstudo/Tarefas/Tarefas.csproj",
         "packagesPath": "/home/luciano/.nuget/packages/",
-        "outputPath": "/home/luciano/netcoreprojects/aspcore2/Tarefas/obj/",
+        "outputPath": "/home/luciano/netcoreprojects/NetCoreEstudo/Tarefas/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/share/dotnet/sdk/NuGetFallbackFolder"
